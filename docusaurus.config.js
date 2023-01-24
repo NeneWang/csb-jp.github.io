@@ -2,17 +2,18 @@ const title = "CodeSandbox ガイド";
 const description = "CodeSandbox 非公式日本語ドキュメント";
 const owner = "csb-jp";
 const repo = "csb-jp.github.io";
-const locales = ["ja"];
+const locales = ["en"];
 
 module.exports = {
-  url: "https://csb-jp.github.io",
+  // url: "https://csb-jp.github.io",
+  url: "http://127.0.0.1:5500",
   baseUrl: "/",
   title,
   favicon: "img/favicon.ico",
   tagline: description,
   organizationName: owner,
   projectName: repo,
-  trailingSlash: false,
+  trailingSlash: true,
   i18n: { locales, defaultLocale: locales[0] },
   presets: [
     [
@@ -76,12 +77,6 @@ module.exports = {
       ],
     },
     footer: {},
-    algolia: {
-      appId: "DU2A7Q5ZGR",
-      apiKey: "bb6ace279b50e8c509c5375ca836d341",
-      indexName: "csb-jp",
-      contextualSearch: false,
-    },
   },
   customFields: {
     features: [
