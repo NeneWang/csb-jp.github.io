@@ -3,4 +3,4 @@ title: algo
 ---
 
 
-aLGORITHMS
+Algorithms

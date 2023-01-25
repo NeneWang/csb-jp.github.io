@@ -59,9 +59,27 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'algo',
-        path: 'algo',
-        routeBasePath: 'algo',
+        id: 'algo-1',
+        path: 'algo-1',
+        routeBasePath: 'algo-1',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'algo-2',
+        path: 'algo-2',
+        routeBasePath: 'algo-2',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'algo-3',
+        path: 'algo-3',
+        routeBasePath: 'algo-3',
         sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
@@ -79,9 +97,30 @@ module.exports = {
           label: "ドキュメント",
         },
         {
-          href: `https://github.com/${owner}/${repo}`,
-          label: "GitHub",
-          position: "right",
+          type: 'dropdown',
+          label: 'アｌゴ',
+          position: 'left',
+          items: [
+
+            {
+              href: `/algo-1`,
+              label: "アｌゴ一弾",
+
+            },
+            {
+              href: `/algo-2`,
+              label: "アｌゴ二弾",
+            },
+            {
+              href: `/algo-3`,
+              label: "アｌゴ三弾",
+            },
+          ]
+        },
+        {
+          label: 'パッティｒン',
+          href: '/pattern',
+          position: 'left',
         },
       ],
     },

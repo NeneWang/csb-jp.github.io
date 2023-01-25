@@ -1,0 +1,6 @@
+---
+title: algo
+---
+
+
+Algorithms
