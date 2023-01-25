@@ -83,6 +83,24 @@ module.exports = {
         sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'pattern',
+        path: 'pattern',
+        routeBasePath: 'pattern',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'template',
+        path: 'template',
+        routeBasePath: 'template',
+        sidebarPath: require.resolve('./sidebars.js'),
+      },
+    ],
   ],
   themeConfig: {
     navbar: {
@@ -120,6 +138,11 @@ module.exports = {
         {
           label: 'パッティｒン',
           href: '/pattern',
+          position: 'left',
+        },
+        {
+          label: 'てｍｐぁて',
+          href: '/template',
           position: 'left',
         },
       ],
