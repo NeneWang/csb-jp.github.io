@@ -1,43 +1,3 @@
----
-title: Creational Patterns
----
-
-Desing Patterns that are typically split into three categories
-
-- Creational Patterns
-- Structural Patterns
-  - Concerned with the structure
-  - Many patters that are wrappers that mimic the underlying class interface
-  - Stress the importance of good API design
-- Behavioral Patterns
-  - They are all different, no central theme.
-
-### Builder Pattern
-
-![](./../../img/2023-01-25-16-03-35.png)
-
-Some objects are simple and can be created in a single initializer call.
-- Other objects require a lot of ceremony to create
-- Having an object with 10 initializer arguments is not productive.
-- Builder provides an API for it. 
-- For complicated Construction of something.
-
-### Builder Facets
-
-Check into the example provided:
-
-
-<details>
-<summary>
-Builder with Facets Example:
-
-Features:
-
-- 
-
-</summary>
-
-```python
 class Person:
     def __init__(self):
         print('Creating an instance of Person')
@@ -56,6 +16,7 @@ class Person:
 
 
 class PersonBuilder:  # facade
+    # This both implements Person
     def __init__(self, person=None):
         # If is not started, then we can create a new person
         if person is None:
@@ -64,14 +25,17 @@ class PersonBuilder:  # facade
             # Or we can allow the edition of a builder.
             self.person = person
 
+    # And now considers as property the Person BAddress Builder when being used for living
     @property
     def lives(self):
         return PersonAddressBuilder(self.person)
 
+    # Also implements personJobBuilder when considering work.
     @property
     def works(self):
         return PersonJobBuilder(self.person)
 
+    # Then finally when we call build, it would be returning the person.
     def build(self):
         return self.person
 
@@ -120,31 +84,13 @@ if __name__ == '__main__':
             .at('123 London Road')\
             .in_city('London')\
             .with_postcode('SW12BC')\
+            .in_city('Peru')\
         .works\
             .at('Fabrikam')\
+            .at('asd')\
             .as_a('Engineer')\
             .earning(123000)\
         .build()
     print(p)
     person2 = PersonBuilder().build()
     print(person2)
-
-
-```
-
-</details>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
