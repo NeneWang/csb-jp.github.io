@@ -239,5 +239,33 @@ for p in bf.filter(products, large_blue):
     print(f' - {p.name} is large and blue')
 ```
 
+## liskov substitution principle
+
+Liskov Substitution Principle (LSP) states that objects of a superclass should be replaceable with objects of its subclasses without breaking the application. 
+
+This helps us model good inheritance hierarchies. It helps us prevent model hierarchies that don't conform to the Open/Closed principle. Any inheritance model that adheres to the Liskov Substitution Principle will implicitly follow the Open/Closed principle.
+
+
+## Interface Segreagation Principle
+
+Clients should not be forced to depend upon interfaces that they do not use.
+ Single Responsibility Principle, the goal of the Interface Segregation Principle is to reduce the side effects and frequency of required changes by splitting the software into multiple, independent parts.
+Advantages: Doesn't  implement methods we dont need. Increases readability and maintainability of our code.
+
+## Dependency Inversion Principle
+
+https://www.youtube.com/watch?v=qL2-5g_lJTs
+
+Depends on the dependency states is that high level classes should not depend on low level but on abstractions. Class with abstract methods. Swap one from the other. Advantages: gives flexibility and stability at the level of the entire architecture of your application. It will allow your application to evolve more securely and stable.
+> In the same way that ceo should not double as a truck driver, Higher level clases shouldnt implement low levels classes.
+
+
+
+
+
+
+
+
+
 
 

@@ -1,0 +1,10 @@
+[
+  "single-responsability-principle",
+  "specification-pattern",
+  "open-closed-principle",
+  "singleton-pattern",
+  "liskov-substitution-principle",
+  "interface-segregation-principle",
+  "backpropagation-neural-network",
+  "concurrent-computing"
+]

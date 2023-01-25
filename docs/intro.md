@@ -21,3 +21,21 @@ While you document best practices and math/physic and other problems patterns he
 as your singleton reference to this information.
 
 To get the link, you could just search the title with the search integration of it.
+
+
+:::note Steps
+
+1. Understand it
+2. Search the official definition
+3. Search Advantages and Disadvantages
+4. Create the Term in the maid-cli terms.
+
+
+:::
+
+
+
+
+
+
+
