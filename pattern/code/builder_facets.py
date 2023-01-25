@@ -81,10 +81,7 @@ if __name__ == '__main__':
     pb = PersonBuilder()
     p = pb\
         .lives\
-            .at('123 London Road')\
-            .in_city('London')\
-            .with_postcode('SW12BC')\
-            .in_city('Peru')\
+            .at('123 London Road').in_city('London').with_postcode('SW12BC').in_city('Peru')\
         .works\
             .at('Fabrikam')\
             .at('asd')\
