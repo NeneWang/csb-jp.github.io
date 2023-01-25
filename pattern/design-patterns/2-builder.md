@@ -33,7 +33,26 @@ Builder with Facets Example:
 
 Features:
 
-- 
+- This example you could implement it like this:
+
+
+```python
+
+if __name__ == '__main__':
+    pb = PersonBuilder()
+    p = pb\
+        .lives\
+            .at('123 London Road').in_city('London').with_postcode('SW12BC').in_city('Peru')\
+        .works\
+            .at('Fabrikam')\
+            .at('asd')\
+            .as_a('Engineer')\
+            .earning(123000)\
+        .build()
+    print(p)
+    person2 = PersonBuilder().build()
+    print(person2)
+```
 
 </summary>
 

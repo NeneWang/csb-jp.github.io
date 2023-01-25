@@ -66,6 +66,7 @@ class PersonAddressBuilder(PersonBuilder):
 
     def at(self, street_address):
         self.person.street_address = street_address
+        # Because they return themselves they are able to continue editing themselves.
         return self
 
     def with_postcode(self, postcode):
