@@ -4,7 +4,10 @@ title: はじめに!
 slug: /
 ---
 
-## CodeSandbox (コード・サンドボックス)とは
+## コード・サンドボックス とは
 
-CodeSandbox は Web アプリケーション開発のためのオンラインエディターです。
-Web ブラウザの上ですばやくプロトタイプを作成し、簡単に実験を行い、ワンクリックで共有できます。
+The main objective is here to have a collection of:
+
+- Accessible Understanding of the problems -> Resulting in quick conclusion on why something works.
+- Accessible Documentation of different projects
+- Accessible Documentation on the location of different Practice and Template Projects (To fork from. [Including this one.])
