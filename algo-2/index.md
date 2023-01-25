@@ -1,3 +1,3 @@
 ---
-title: Algorightms
+title: アｌゴ二弾
 ---
