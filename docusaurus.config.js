@@ -1,6 +1,6 @@
-const title = "CodeSandbox ガイド";
-const description = "CodeSandbox 非公式日本語ドキュメント";
-const owner = "csb-jp";
+const title = "アｌゴドク";
+const description = "アｌゴリツモ　ど　ェエｔコデ.";
+const owner = "Nelson";
 const repo = "csb-jp.github.io";
 const locales = ["en"];
 
@@ -54,6 +54,15 @@ module.exports = {
             content: "#0971f1",
           },
         ],
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'algo',
+        path: 'algo',
+        routeBasePath: 'algo',
+        sidebarPath: require.resolve('./sidebars.js'),
       },
     ],
   ],
