@@ -112,7 +112,7 @@ Product Filter, write test.
 
 
 
-## Enterprice Patterns:
+## Enterprise Patterns:
 
 - Specification:
 

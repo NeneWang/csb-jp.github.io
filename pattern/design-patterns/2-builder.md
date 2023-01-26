@@ -16,6 +16,10 @@ Desing Patterns that are typically split into three categories
 
 ![](./../../img/2023-01-25-16-03-35.png)
 
+Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code.
+The Builder pattern suggests that you extract the object construction code out of its own class and move it to separate objects called builders.
+Director: You can go further and extract a series of calls to the builder steps you use to construct a product into a separate class called director. The director class defines the order in which to execute the building steps, while the builder provides the implementation for those steps.
+
 Some objects are simple and can be created in a single initializer call.
 - Other objects require a lot of ceremony to create
 - Having an object with 10 initializer arguments is not productive.
@@ -25,6 +29,8 @@ Some objects are simple and can be created in a single initializer call.
 ### Builder Facets
 
 Check into the example provided:
+
+- Provides the ability to select different part of the class to be build.
 
 
 <details>
@@ -53,6 +59,8 @@ if __name__ == '__main__':
     person2 = PersonBuilder().build()
     print(person2)
 ```
+
+![](./../../img/2023-01-25-16-23-21.png)
 
 </summary>
 
@@ -152,6 +160,12 @@ if __name__ == '__main__':
 ```
 
 </details>
+
+### Builder Inheritance
+
+Solves the issue of Liskov Substitution and Dependency Inversion
+
+Example found at `builder_inheritance.py`
 
 
 
